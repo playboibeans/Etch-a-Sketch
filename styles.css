@@ -55,25 +55,33 @@ body {
 
 button {
     background-color: rgb(211, 198, 180);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 10px 10px;
     border: 0;
     font-size: large;
     font-weight: bolder;
     width: 100px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.5px;
 }
 
 button:hover {
     background-color: rgb(193, 181, 165);
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:active {
     background-color: rgb(170, 159, 145);
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button.selected {
     /* border: 1px solid rgb(0, 0, 0); */
-    background-color: antiquewhite;
+    background-color: rgb(251, 216, 171);
     opacity: 0.8;
-    box-shadow: 0 0 2px 2px goldenrod;
+    /* box-shadow: 0 0 2px 2px goldenrod; */
 }
